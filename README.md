@@ -1,2 +1,5 @@
 # GeckoSpiders
-Deque
+Class Deque<E> 
+  Methods:
+    addFirst
+    addLast
