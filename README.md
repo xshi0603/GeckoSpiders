@@ -1,5 +1,5 @@
 # GeckoSpiders
-<h1>interface Deque<E> -- to be implemented in class QQ
+<h1>interface Deque<E> -- to be implemented in class QQ</h1>
   Methods
     addFirst(E x);
     addLast(E x);
