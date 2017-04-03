@@ -1,14 +1,12 @@
 # GeckoSpiders
 <h2>interface Deque[E] </h2>-- to be implemented in class QQ
   <h3>Methods</h3>
-    <h4>
-    addFirst(E x);
-    addLast(E x);
-    removeFirst();
-    removeLast();
-    peekFirst();
-    peekLast();
-    </h4>
+    <p>addFirst(E x);</p>
+    <p>addLast(E x);</p>
+    <p>removeFirst();</p>
+    <p>removeLast();</p>
+    <p>peekFirst();</p>
+    <p>peekLast();</p>
     
 <h2>class QQ implements Deque[E]</h2>
   <h3>Methods</h3>
