@@ -13,11 +13,11 @@ public class DLLNode<T>
 {
 
     private T _cargo;    //cargo may only be of type String
-    private DLLNode _nextNode; //pointer to next LLNode
-    private DLLNode _prevNode; //pointer to next LLNode
+    private DLLNode<T> _nextNode; //pointer to next LLNode
+    private DLLNode<T> _prevNode; //pointer to next LLNode
 
     // constructor -- initializes instance vars
-    public DLLNode( T value, DLLNode next, DLLNode previous ) 
+    public DLLNode( T value, DLLNode<T> next, DLLNode<T> previous ) 
     {
 
 	_cargo = value;
@@ -30,9 +30,9 @@ public class DLLNode<T>
     //--------------v  ACCESSORS  v--------------
     public T getCargo() { return _cargo; }
 
-    public DLLNode getNext() { return _nextNode; }
+    public DLLNode<T> getNext() { return _nextNode; }
 
-    public DLLNode getPrev() { return _prevNode; }
+    public DLLNode<T> getPrev() { return _prevNode; }
     //--------------^  ACCESSORS  ^--------------
 
 
