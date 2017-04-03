@@ -19,6 +19,7 @@ public class QQ<E> implements Deque<E> {
 	}
 	else { //if already consists of elements
 	    temp.setNext(_front);
+	    _front.setPrev(temp);
 	    _front = temp;
 	}
 	_size += 1;
@@ -35,6 +36,7 @@ public class QQ<E> implements Deque<E> {
 	}
 	else { //if already consists of elements
 	    temp.setPrev(_end);
+	    _end.setNext(temp);
 	    _end = temp;
 	}
 	_size += 1;
@@ -51,6 +53,7 @@ public class QQ<E> implements Deque<E> {
 	}
 	else {
 	    _front = _front.getNext();
+	    _front.setPrev(null);
 	}
 	_size -= 1;
 	
@@ -68,6 +71,7 @@ public class QQ<E> implements Deque<E> {
 	}
 	else {
 	    _end = _end.getPrev();
+	    _front.setNext(null);
 	}	    
 	_size -= 1;
 
@@ -108,9 +112,15 @@ public class QQ<E> implements Deque<E> {
 
 	QQ<String> tester = new QQ<String>();
 	tester.addFirst("hello");
-	tester.addLast("hello2");
-	tester.removeLast();
+	tester.addFirst("there");
+	tester.addFirst("sweet");
+	tester.addFirst("prince");
+	System.out.println(tester);
+	System.out.println(tester.removeFirst());
+	System.out.println(tester.removeFirst());
 	System.out.println(tester.removeLast());
+	System.out.println(tester.removeLast());
+	System.out.println(tester);
     }
 
 }
