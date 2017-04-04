@@ -8,6 +8,8 @@
     <p>removeLast();</p>
     <p>peekFirst();</p>
     <p>peekLast();</p>
-    
+
+<h3>
 Deque is implemented using doubly-linked nodes because the nodes have pointer to 
 what is in front and behind, allowing us to implement the methods above in O(1) runtime.      
+</h3>
