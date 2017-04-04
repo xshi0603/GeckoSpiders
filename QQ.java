@@ -8,7 +8,18 @@ public class QQ<E> implements Deque<E> {
 	_end = null;
 	_size = 0;
     }
-    
+	
+/******************************************
+* void addFirst(E x) -- adding element E to the front
+* algo:
+* 1. Create temp DLLNode with cargo equal to the element
+* 2. If QQ is empty, set temp as _front and _end
+* 3. Else:
+	- temp points to what is currently _front
+	- temp is set as _front's previous node
+	- temp is set as _front
+ ******************************************/	
+	
     public void addFirst(E x){
 
 	DLLNode<E> temp = new DLLNode<E>(x, null, null);
@@ -25,7 +36,15 @@ public class QQ<E> implements Deque<E> {
 	_size += 1;
 
     }//O(1)
-
+/******************************************
+* void addLast(E x) -- adding element E to the end
+* algo:
+* 1. Create temp DLLNode with cargo equal to the element
+* 2. If QQ is empty, set temp as _front and _end
+* 3. Else:
+	- _end points to temp
+	- temp becomes _end
+ ******************************************/	
     public void addLast(E x) {
 
 	DLLNode<E> temp = new DLLNode<E>(x, null, null);
@@ -42,7 +61,15 @@ public class QQ<E> implements Deque<E> {
 	_size += 1;
 
     }//O(1)
-
+/******************************************
+* E removeFirst() -- remove element from the front
+* algo:
+* 1. Set retVal equal to _front's cargo
+* 2. If there is only 1 element in QQ, make _front and _end point to nothing
+* 3. Else:
+	- _front is set to next node
+	- _front's previous node is set to null
+ ******************************************/	
     public E removeFirst() {
 
 	E retVal = _front.getCargo();
@@ -60,7 +87,15 @@ public class QQ<E> implements Deque<E> {
 	return retVal;
 
     }//O(1)
-
+/******************************************
+* E removeLast() -- remove element from the end
+* algo:
+* 1. Set retVal equal to _end's cargo
+* 2. If there is only 1 element in QQ, make _front and _end point to nothing
+* 3. Else:
+	- _end is set to previous node
+	- _front's next node is set to null
+ ******************************************/	
     public E removeLast() {
 
 	E retVal = _end.getCargo();
