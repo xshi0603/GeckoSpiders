@@ -14,7 +14,7 @@ public class QQ<E> implements Deque<E> {
 	DLLNode<E> temp = new DLLNode<E>(x, null, null);
 	
 	if (_size == 0) { //if the QQ is empty
-	    _front = temp;
+	    _front = temp; //_front and _end point to same value
 	    _end = temp;
 	}
 	else { //if already consists of elements
@@ -31,7 +31,7 @@ public class QQ<E> implements Deque<E> {
 	DLLNode<E> temp = new DLLNode<E>(x, null, null);
 	
 	if (_size == 0) { //if the QQ is empty
-	    _front = temp;
+	    _front = temp; //_front and _end point to same value
 	    _end = temp;
 	}
 	else { //if already consists of elements
@@ -47,8 +47,8 @@ public class QQ<E> implements Deque<E> {
 
 	E retVal = _front.getCargo();
 	
-	if (_size == 1) {
-	    _front = null;
+	if (_size == 1) {//if one element left
+	    _front = null; //_front and _end point to nothing
 	    _end = null;
 	}
 	else {
@@ -66,7 +66,7 @@ public class QQ<E> implements Deque<E> {
 	E retVal = _end.getCargo();
 	
 	if (_size == 1) {//if one element left
-	    _front = null;
+	    _front = null; //_front and _end point to nothing
 	    _end = null;
 	}
 	else {
