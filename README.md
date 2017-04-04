@@ -1,4 +1,5 @@
-# GeckoSpiders
+# GeckoSpiders 
+<h3>Xing Tao Shi, Taylor Wong, Chris Yu</h3>
 <h2>interface Deque[E] </h2>-- to be implemented in class QQ
   <h3>Methods</h3>
     <p>addFirst(E x);</p>
