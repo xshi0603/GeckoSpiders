@@ -5,13 +5,35 @@
     <p>
       addFirst(E x):
       <br>
-        adds item to the front of the queue;
+        enqueues item to the front of the queue
     </p>
-    <p>addLast(E x);</p>
-    <p>removeFirst();</p>
-    <p>removeLast();</p>
-    <p>peekFirst();</p>
-    <p>peekLast();</p>
+    <p>
+    
+    addLast(E x):
+    <br>
+      enqueues item to the end of the queue
+    </p>
+    
+    <p>
+    removeFirst():
+    <br>
+      dequeues the first item in the queue
+      </p>
+    <p>
+    removeLast():
+    <br>
+      dequeues item from the end of the queue
+    </p>
+    <p>
+    peekFirst():
+    <br>
+      returns the first item in the queue so you can take a "peek" at it
+      </p>
+    <p>
+    peekLast():
+    <br>
+      return the last item in the queue so you can take a "peek" at it
+    </p>
 
 <h3>
 Deque is implemented using doubly-linked nodes because the nodes have pointer to 
