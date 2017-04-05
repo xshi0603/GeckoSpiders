@@ -12,7 +12,6 @@
     <br>
       enqueues item to the end of the queue
     </p>
-    
     <p>
     removeFirst():
     <br>
