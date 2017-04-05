@@ -106,7 +106,7 @@ public class QQ<E> implements Deque<E> {
 	}
 	else {
 	    _end = _end.getPrev();
-	    _front.setNext(null);
+	    _end.setNext(null);
 	}	    
 	_size -= 1;
 
