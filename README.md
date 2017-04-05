@@ -8,7 +8,6 @@
         enqueues item to the front of the queue
     </p>
     <p>
-    
     addLast(E x):
     <br>
       enqueues item to the end of the queue
