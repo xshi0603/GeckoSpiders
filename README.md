@@ -3,9 +3,8 @@
 <h2>interface Deque[E] </h2> Implemented in class QQ (Doubly-Linked Node Based)
   <h3>Methods</h3>
     <p>
-      addFirst(E x):
-      <br>
-        enqueues item to the front of the queue
+    <b>addFirst(E x): </b>
+      enqueues item to the front of the queue
     </p>
     <p>
     addLast(E x):
