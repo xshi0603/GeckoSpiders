@@ -156,6 +156,7 @@ public class QQ<E> implements Deque<E> {
 	System.out.println(tester.removeLast());
 	System.out.println(tester.removeLast());
 	System.out.println(tester);
+	tester.addLast("Charming");	
     }
 
 }
