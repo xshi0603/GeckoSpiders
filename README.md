@@ -44,4 +44,6 @@ We resolved an error where in removeLast(), if degree is bigger than size 1, it 
 
 <br>
 <br>
+<br>
+<br>
 * Special thanks to QQ and CrispySpoon for the helpful feedback! *
