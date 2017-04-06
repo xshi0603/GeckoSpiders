@@ -41,3 +41,7 @@ what is in front and behind, allowing us to implement the methods above in O(1) 
 ## ERRORS FIXED
 
 We resolved an error where in removeLast(), if degree is bigger than size 1, it will set front.getNext() to null which should be _end.setNext(null) (line 109).
+
+<br>
+<br>
+* Special thanks to QQ and CrispySpoon for the helpful feedback! *
