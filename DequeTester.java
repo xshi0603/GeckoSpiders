@@ -1,63 +1,79 @@
-public class DequeTester {
+// CrispySpoon
+// Xin Yi Chen, Joanna Zhou
+// APCS2 pd4
+// HW#29: Stress is the Best  
+// 2017-4-4
 
-    public static void main(String[] args) {
+public class DequeTester{
+    
+    public static void main( String[] args ) 
+    {
+	Deque<String> spoon = new QQ<String>();
 
-	Deque<String> tester = new QQ<String>();//replace QQ with whatever the name of your implementation of deque is
+	System.out.println("testing add....");
 
-	//testing addFirst
+	spoon.addFirst("I");
+	System.out.println(spoon + "   size:" + "spoon.size()");
+	spoon.addLast("am");
+	System.out.println(spoon + "   size:" + "spoon.size()");
+	spoon.addLast("hungry");
+	System.out.println(spoon + "   size:" + "spoon.size()");
 
-	tester.addFirst("princess");
-	tester.addFirst("fair");
-	tester.addFirst("there");
-	tester.addFirst("hello");
-	System.out.println(tester); //should become "hello there fair princess"    
+	System.out.println("===============================================");
+
+	System.out.println("peek....");
+
+	System.out.println(spoon.peekFirst() + " " + spoon.peekLast());
 	
-	//testing removeFirst
-
-	System.out.println(tester.removeFirst());
-	System.out.println(tester.removeFirst());
-	System.out.println(tester.removeFirst());
-	System.out.println(tester.removeFirst());
+	System.out.println("===============================================");
 	
-	//testing addLast
+	/*System.out.println("testing contains....");
+
+	System.out.println(spoon.contains("am"));//true
+	System.out.println(spoon.contains("i"));//false
 	
-	tester.addLast("hello");
-	tester.addLast("there");
-	tester.addLast("fair");
-	tester.addLast("prince");
-	System.out.println(tester); //should become "hello there fair prince"    
-	//testing removeLast
+	System.out.println("===============================================");*/
+	
+	System.out.println("testing remove....");
+	
+	spoon.removeLast();
+	System.out.println(spoon + "   size:" + "spoon.size()");
+	spoon.removeFirst();
+	System.out.println(spoon + "   size:" + "spoon.size()");
+	spoon.removeLast();
+	System.out.println(spoon + "   size:" + "spoon.size()");
+	spoon.removeLast();
+	System.out.println(spoon + "   size:" + "spoon.size()");
 
-	System.out.println(tester.removeLast());
-	System.out.println(tester.removeLast());
-	System.out.println(tester.removeLast());
-	System.out.println(tester.removeLast());
+	System.out.println("===============================================");
+	
+	/*System.out.println("testing remove(Object)....");
 
-	//testing peekFirst and peekLast
+	spoon.addFirst("I");
+	spoon.addLast("am");
+	spoon.add("hungry");
+	spoon.addFirst("hi");
+	spoon.addLast("am");
+	spoon.add("hungry");
+	
+	spoon.removeFirstOccurrence("am");
+	System.out.println(spoon + "   size:" + spoon.size());
+	spoon.removeLastOccurrence("hungry");
+	System.out.println(spoon + "   size:" + spoon.size());
+	spoon.remove("I");
+	System.out.println(spoon + "   size:" + spoon.size());
+	spoon.remove("meow");
+	System.out.println(spoon + "   size:" + spoon.size());
 
-	tester.addLast("i'm first");
-	tester.addLast("i'm last");
-	System.out.println(tester.peekFirst());
-	System.out.println(tester.peekLast());
 
-	/*
-	  terminal should display:
+	System.out.println("===============================================");
 
-hello   there   fair   princess
-hello
-there
-fair
-princess
-hello   there   fair   prince
-prince
-fair
-there
-hello
-i'm first
-i'm last
+	System.out.println("testing pop and push....");
 
-	*/
-
-    }
-
-}
+	spoon.push("byeee");
+	System.out.println(spoon + "   size:" + spoon.size());
+	System.out.println(spoon.pop()+ "   size:" + spoon.size() );
+	System.out.println(spoon.pop()+ "   size:" + spoon.size() );*/
+    }//end main
+    
+}//end class
