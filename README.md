@@ -26,7 +26,9 @@
     <b>peekLast(): </b>
       return the last item in the queue so you can take a "peek" at it
     </p>
-
+    <br>
+    We chose these methods because we thought that this was the mininimum amount needed in order to be able to function as a Deque. For example, without addLast(), this would just have been a stack/queue with an addition removeLast() method. However, with all of these methods, this class has the functionability of a Deque.
+    
 <h3>
 Deque is implemented using doubly-linked nodes because the nodes have pointer to 
 what is in front and behind, allowing us to implement the methods above in O(1) runtime.      
