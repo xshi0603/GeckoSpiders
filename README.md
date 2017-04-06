@@ -7,28 +7,23 @@
       enqueues item to the front of the queue
     </p>
     <p>
-    addLast(E x):
-    <br>
+    <b>addLast(E x): </b>
       enqueues item to the end of the queue
     </p>
     <p>
-    removeFirst():
-    <br>
+    <b>removeFirst(): </b>
       dequeues the first item in the queue
       </p>
     <p>
-    removeLast():
-    <br>
+    <b>removeLast(): </b>
       dequeues item from the end of the queue
     </p>
     <p>
-    peekFirst():
-    <br>
+    <b>peekFirst():</b>
       returns the first item in the queue so you can take a "peek" at it
       </p>
     <p>
-    peekLast():
-    <br>
+    <b>peekLast(): </b>
       return the last item in the queue so you can take a "peek" at it
     </p>
 
