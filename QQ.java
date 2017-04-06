@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class QQ<E> implements Deque<E> {
 
     private DLLNode<E> _front, _end;
@@ -73,7 +75,10 @@ public class QQ<E> implements Deque<E> {
     public E removeFirst() {
 
 	E retVal = _front.getCargo();
-	
+
+	if (_size == 0) {//if it is empty
+	    throw new NoSuchElementException();
+	}
 	if (_size == 1) {//if one element left
 	    _front = null; //_front and _end point to nothing
 	    _end = null;
@@ -99,7 +104,10 @@ public class QQ<E> implements Deque<E> {
     public E removeLast() {
 
 	E retVal = _end.getCargo();
-	
+
+	if (_size == 0) {//if it is empty
+	    throw new NoSuchElementException();
+	}
 	if (_size == 1) {//if one element left
 	    _front = null; //_front and _end point to nothing
 	    _end = null;
@@ -116,12 +124,18 @@ public class QQ<E> implements Deque<E> {
 
     public E peekFirst() {
 
+	if (_size == 0) {//if it is empty
+	    throw new NoSuchElementException();
+	}
 	return _front.getCargo();
 
     }//O(1)
 
     public E peekLast() {
 
+	if (_size == 0) {//if it is empty
+	    throw new NoSuchElementException();
+	}
 	return _end.getCargo();
 
     }//O(1)
